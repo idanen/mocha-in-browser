@@ -1,0 +1,33 @@
+{
+  "name": "mocha-in-browser",
+  "version": "1.0.0",
+  "description": "Run tests using Mocha in browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "build": "babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/idanen/mocha-in-browser.git"
+  },
+  "keywords": [
+    "testing",
+    "unit-test",
+    "mocha"
+  ],
+  "author": "Idan Entin <idanen@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/idanen/mocha-in-browser/issues"
+  },
+  "homepage": "https://github.com/idanen/mocha-in-browser#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "sinon": "^4.0.1"
+  }
+}
