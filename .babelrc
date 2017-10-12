@@ -1,12 +1,15 @@
 {
-    "presets": [
-        [
-            "env",
-            {
-                "targets": {
-                    "browsers": ["last 1 Chrome versions"]
-                }
-            }
-        ]
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": [
+            "last 1 Chrome versions"
+          ]
+        },
+        "modules": false
+      }
     ]
+  ]
 }

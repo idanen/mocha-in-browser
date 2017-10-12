@@ -1,3 +1,3 @@
-export default function hello(someone) {
-    return `Hello ${someone || 'World'}!`;
-}
+import hello from './hello.js';
+
+export default hello;

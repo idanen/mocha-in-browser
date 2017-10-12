@@ -3,7 +3,6 @@
 A simple setup to run tests in your browser
 
 ## How to use
-* Build using `npm run build`
-* Include the build result in the `index.html`
-* Include the test files in `index.html`
-* Open the file in your browser
+* Build using `npm run webpack` (or `watch` while developing)
+* Include test files in the `src/tests/index.js`
+* Open the `index.html` file in your browser

@@ -18,14 +18,8 @@
     mocha.setup('bdd');
   </script>
 
-  <!-- Source under test -->
-  <script src="./lib/index.js"></script>
-
-  <!-- Tests -->
-  <script src="./tests/hello.test.js"></script>
-
-  <script>
-    mocha.run();
-  </script>
+  <script type="module" src="./src/tests/index.js"></script>
+  <script nomodule src="./lib/bundled/app.bundle.js"></script>
+  <script nomodule src="./lib/bundled/tests.bundle.js"></script>
 </body>
 </html>
