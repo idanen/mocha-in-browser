@@ -4,7 +4,7 @@
   "description": "Run tests using Mocha in browser",
   "main": "index.js",
   "scripts": {
-    "test": "test",
+    "test": "node run-tests.js",
     "build": "babel src --out-dir lib",
     "build-tests": "babel tests --out-dir lib/tests",
     "webpack": "webpack",
@@ -43,6 +43,7 @@
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-mocha": "^1.3.0",
+    "puppeteer": "^1.4.0",
     "webpack": "^3.7.1",
     "webpack-dev-server": "^2.9.1"
   }

@@ -1,3 +1,3 @@
-import './hello.test.js';
+import './prime-factors.test.js';
 
-mocha.run();
+window.runner = mocha.run();
