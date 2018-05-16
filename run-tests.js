@@ -5,10 +5,7 @@ const fs = require('fs');
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   page.on('console', msg => console.log('PAGE LOG:', msg.text()));
-  console.log('navigating');
-  // const pageContent = await new Promise(resolve => fs.readFile('./index.html', 'utf-8', (err, data) => resolve(data)));
-  // console.log(pageContent);
-  // await page.setContent(pageContent);
+  page.on('pageerror', msg => console.log('PAGE error:', msg));
   await page.goto('http://localhost:9000');
   await page.evaluate(() => {
     return new Promise(resolve => {
@@ -20,8 +17,6 @@ const fs = require('fs');
       });
     });
   });
-  // await page.screenshot({ path: 'results.png' });
-  // console.log('screenshot grabbed');
 
   await browser.close();
 })();

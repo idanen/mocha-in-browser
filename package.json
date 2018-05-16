@@ -4,12 +4,15 @@
   "description": "Run tests using Mocha in browser",
   "main": "index.js",
   "scripts": {
+    "pretest": "npm run serve &",
     "test": "node run-tests.js",
+    "posttest": "pkill -f http-server",
     "build": "babel src --out-dir lib",
     "build-tests": "babel tests --out-dir lib/tests",
     "webpack": "webpack",
     "watch": "webpack --watch",
-    "dev": "webpack && http-server -p 9000",
+    "dev": "webpack && serve",
+    "serve": "http-server -p 9000",
     "karma": "karma start --single-run --browsers ChromeHeadless karma.conf.js"
   },
   "repository": {
