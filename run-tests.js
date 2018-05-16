@@ -24,5 +24,4 @@ const fs = require('fs');
   // console.log('screenshot grabbed');
 
   await browser.close();
-  console.log('browser closed');
 })();
